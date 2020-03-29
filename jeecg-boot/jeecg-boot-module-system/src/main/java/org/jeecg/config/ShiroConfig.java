@@ -91,6 +91,7 @@ public class ShiroConfig {
 		filterChainDefinitionMap.put("/generic/**", "anon");//pdf预览需要文件
 		filterChainDefinitionMap.put("/", "anon");
 		filterChainDefinitionMap.put("/doc.html", "anon");
+        filterChainDefinitionMap.put("/index.html", "anon");
 		filterChainDefinitionMap.put("/**/*.js", "anon");
 		filterChainDefinitionMap.put("/**/*.css", "anon");
 		filterChainDefinitionMap.put("/**/*.html", "anon");
@@ -120,6 +121,7 @@ public class ShiroConfig {
 		//测试示例
 		filterChainDefinitionMap.put("/test/jeecgDemo/html", "anon"); //模板页面
 		filterChainDefinitionMap.put("/test/jeecgDemo/redis/**", "anon"); //redis测试
+		filterChainDefinitionMap.put("/test/jeecgDemo/hello", "anon");
 
 		//排除Online请求
 		filterChainDefinitionMap.put("/auto/cgform/**", "anon");

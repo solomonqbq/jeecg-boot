@@ -59,6 +59,18 @@ public class JeecgDemoController extends JeecgController<JeecgDemo, IJeecgDemoSe
     private RedisUtil redisUtil;
 
     /**
+     * 测试
+     * @return
+     */
+    @GetMapping(value = "/hello")
+    public Result<String> hello() {
+        Result<String> result = new Result<String>();
+        result.setResult("Hello World!");
+        result.setSuccess(true);
+        return result;
+    }
+
+    /**
      * 分页列表查询
      *
      * @param jeecgDemo
